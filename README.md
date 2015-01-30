@@ -7,7 +7,6 @@ VirtualEdgeProject
 * Make QR or NFC interact with the project<br>
 * OpenGL code intergration and examples<br>
 * Make the mockup design for the app<br>
-* SORT THIS AWFUL DESIGN OUT<br>
 
 
 FIXES:<br>
