@@ -18,7 +18,7 @@ FIXES:<br>
 <br>
 
 ADDITIONS:<br>
-* None
+* Swipe up to navigate to the floor above or swipe down to go down a floor. For the map activity screen.
 
 
 
