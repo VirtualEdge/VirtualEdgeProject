@@ -19,6 +19,7 @@ FIXES:<br>
 
 ADDITIONS:<br>
 * Swipe up to navigate to the floor above or swipe down to go down a floor. For the map activity screen.
+* Floors will be an overlay screen
 
 
 
