@@ -17,6 +17,9 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Random;
 
 
 public class MainActivity extends ActionBarActivity
@@ -46,7 +49,7 @@ public class MainActivity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
     }
-
+    //Where the user has selected a item in the draw.
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
@@ -54,6 +57,11 @@ public class MainActivity extends ActionBarActivity
         fragmentManager.beginTransaction()
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
+        if(position == 4){
+            Toast.makeText(getApplicationContext(), "You have clicked the scan item", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "You have clicked "+position, Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void onSectionAttached(int number) {
