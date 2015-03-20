@@ -1,0 +1,7 @@
+F:\Virtual Edge\test\android\build\intermediates\classes\debug
+F:\Virtual Edge\test\android\build\intermediates\pre-dexed\debug\core-1.0-e0baa65d48c96dd451202f968a03855db8aa0e5e.jar
+F:\Virtual Edge\test\android\build\intermediates\pre-dexed\debug\box2dlights-1.3-f6218cc211b32456901116245d24422ceabeb52a.jar
+F:\Virtual Edge\test\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.5.5-8313510fc01a80fa3584c1799caac1c7b3c79dbe.jar
+F:\Virtual Edge\test\android\build\intermediates\pre-dexed\debug\gdx-ai-1.5.0-0b187894d9768d77335317d3747b055d7c9ade8c.jar
+F:\Virtual Edge\test\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.5.5-95307b7934319850cf75b28d88fa35e4268665fb.jar
+F:\Virtual Edge\test\android\build\intermediates\pre-dexed\debug\gdx-1.5.5-28abeaf180d11a304aadab7b1c6f26118a1d6019.jar
