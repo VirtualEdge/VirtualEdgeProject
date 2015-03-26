@@ -5,9 +5,9 @@ VirtualEdgeProject
 * Make the QR/NFC reading code<br>
 * Make the 3D rendering code<br>
 * Make QR or NFC interact with the project<br>
-* OpenGL code intergration and examples<br>
+* <del>OpenGL code intergration and examples</del><br>
 * Make the mockup design for the app<br>
-* Update Project Plan<br>
+* <del>Update Project Plan</del><br>
 * Update weekly meeting notes<br>
 * Add issues faced/problems to meetings<br>
 * IF ANYONE HAS ANY PROBLEMS FACED SO FAR CAN YOU SEND ME A NOTE OF THEM AND HOW THE PROBLEM WAS SOLVED - THE VISUAL STUDIO TO ANDROID THING MAYBE KYLE?<br>
