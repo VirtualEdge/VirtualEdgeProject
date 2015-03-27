@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Chapel of a Mastaba Tomb"
+                android:id="@+id/tomb"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="left|top" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/imageButton"
+                android:layout_gravity="right|top"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:scaleType="fitXY"
+                android:src="@drawable/tombmasta" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Restoration"
+                android:id="@+id/button2"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickOne"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Fun Facts"
+                    android:id="@+id/textView6"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="• Over 4300 years ago in Memphis, Ptahshepses worked as a high priest in the cult of the god Ptah."
+                    android:id="@+id/textView7"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="• Ptahshepses was favoured official of the king and was given this tomb in Saqqara cemetery. "
+                    android:id="@+id/textView8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="• Ptahshepses mummy was buried underground in the chamber."
+                    android:id="@+id/textView12" /><![CDATA[
+
+
+
+
+
+                0;
+                    android:id="@+id/editText2" />
+
+
+
+
+
+            ]]>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_weight="1"
+            android:layout_gravity="top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Additional Resources"
+                android:id="@+id/textView27"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="http://www.osirisnet.net/mastabas/akhethtp_ptahhtp/e_akht_ptah_01.htm "
+                android:id="@+id/textView28"
+                android:autoLink="web" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="https://www.youtube.com/watch?v=gN-Pg3l6M3I "
+                android:id="@+id/textView29"
+                android:autoLink="web" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="https://www.youtube.com/watch?v=ByeEbkqfRgA "
+                android:id="@+id/textView30"
+                android:autoLink="web" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
