@@ -49,18 +49,28 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
-
+        //Create a menu fragment to change them all
+        MenuFragment m = new MenuFragment();
         Fragment objFragment = null;
 
         switch(position) {
             case 0:
-                objFragment = new Menu1_Fragment();
+                //Select the fragment to load
+                m.fragSelect(0);
+                objFragment = m;
                 break;
             case 1:
-                objFragment = new Menu2_Fragment();
+                m.fragSelect(1);
+                objFragment = m;
                 break;
             case 2:
-                objFragment = new Menu3_Fragment();
+                m.fragSelect(2);
+                objFragment = m;
+                break;
+            //If fragment is invalid show the empty fragment
+            default:
+                m.fragSelect(99);
+                objFragment = m;
                 break;
         }
 
