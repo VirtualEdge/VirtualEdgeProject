@@ -1,6 +1,7 @@
 package com.example.martin.myapplication;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +13,12 @@ public class MenuFragment extends android.support.v4.app.Fragment {
     View rootview;
     int resource;
 
-    public MenuFragment(){
+    public MenuFragment() {
 
     }
 
-    public void fragSelect(int fragment){
-        switch(fragment){
+    public void fragSelect(int fragment) {
+        switch (fragment) {
             /**Here you give the number a layout to be set for the fragment if else fails the
              * empty/error fragment will show.
              */
@@ -25,7 +26,7 @@ public class MenuFragment extends android.support.v4.app.Fragment {
                 resource = R.layout.menu1_layout;
                 break;
             case 1:
-                resource = R.layout.menu2_layout;
+                resource = R.layout.map2page_alt_layout;
                 break;
             case 2:
                 resource = R.layout.menu1_layout;

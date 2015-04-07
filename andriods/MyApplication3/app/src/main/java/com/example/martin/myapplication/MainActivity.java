@@ -1,6 +1,7 @@
 package com.example.martin.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -17,6 +19,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity
@@ -67,7 +70,7 @@ public class MainActivity extends ActionBarActivity
                 m.fragSelect(2);
                 objFragment = m;
                 break;
-            //If fragment is invalid show the empty fragment
+            //If fragment is invalid show the empty/error fragment
             default:
                 m.fragSelect(99);
                 objFragment = m;
@@ -81,9 +84,18 @@ public class MainActivity extends ActionBarActivity
                 .commit();
     }
 
-    public void clickOne(){
+    public void viewRestoration(View view){
 
+        // Toast test
+        Context context = getApplicationContext();
+        CharSequence text = "You clicked restore!";
+        int duration = Toast.LENGTH_SHORT;
 
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
+        RestoreScreen app = new RestoreScreen();
+        app.start(); // start the game
 
     }
 
