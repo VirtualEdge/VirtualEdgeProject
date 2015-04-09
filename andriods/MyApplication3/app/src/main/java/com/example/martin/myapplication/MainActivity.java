@@ -7,19 +7,17 @@ import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 
 public class MainActivity extends ActionBarActivity
@@ -70,18 +68,51 @@ public class MainActivity extends ActionBarActivity
                 m.fragSelect(2);
                 objFragment = m;
                 break;
+            //Scan button
+            case 5:
+                IntentIntegrator integrator = new IntentIntegrator(this);
+                integrator.initiateScan();
+                break;
             //If fragment is invalid show the empty/error fragment
             default:
                 m.fragSelect(99);
                 objFragment = m;
                 break;
         }
+        //If the selected screen is scan do not update the fragment
+        if(position!=5){
+            // update the main content by replacing fragments
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, objFragment)
+                    .commit();
+        }
+    }
 
-        // update the main content by replacing fragments
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, objFragment)
-                .commit();
+    //Here is the code for the QR scanner when an item has been scanned.
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+        Fragment objFragment = null;
+        // Toast test
+        Context context = getApplicationContext();
+        CharSequence text = scanResult.getContents();
+        int duration = Toast.LENGTH_LONG;
+
+        //Toast toast = Toast.makeText(context, text, duration);
+        //toast.show();
+
+        //Example 1a is the first floor screen if scanned change to that screen.
+        switch(scanResult.getContents()){
+            case "1a":
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+                break;
+            default:
+                Toast toast_error = Toast.makeText(context, "Invalid item scanned!", duration);
+                toast_error.show();
+                break;
+        }
     }
 
     public void viewRestoration(View view){
@@ -93,9 +124,6 @@ public class MainActivity extends ActionBarActivity
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
-        RestoreScreen app = new RestoreScreen();
-        app.start(); // start the game
 
     }
 
