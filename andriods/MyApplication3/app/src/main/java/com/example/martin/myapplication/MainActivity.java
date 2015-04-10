@@ -56,7 +56,7 @@ public class MainActivity extends ActionBarActivity
 
         switch(position) {
             case 0:
-                //Select the fragment to load
+            //Select the fragment to load
                 m.fragSelect(0);
                 objFragment = m;
                 break;
@@ -93,6 +93,7 @@ public class MainActivity extends ActionBarActivity
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+        MenuFragment m = new MenuFragment();
         Fragment objFragment = null;
         // Toast test
         Context context = getApplicationContext();
@@ -107,6 +108,13 @@ public class MainActivity extends ActionBarActivity
             case "1a":
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+                m.fragSelect(1);
+                objFragment = m;
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, objFragment)
+                        .commitAllowingStateLoss();
+
                 break;
             default:
                 Toast toast_error = Toast.makeText(context, "Invalid item scanned!", duration);
