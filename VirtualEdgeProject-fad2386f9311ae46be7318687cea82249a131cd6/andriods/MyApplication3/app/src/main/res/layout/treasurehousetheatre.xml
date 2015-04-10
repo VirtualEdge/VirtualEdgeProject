@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" ><![CDATA[
+
+        ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/teamprojectfloor2" />
+
+
+
+        ]]>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/aquaimg"
+            android:src="@drawable/ththeatre"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="This exciting attraction combines new technology with historic treasures from our collections. With everything from hands-on activities examining ancient exhibits, to live video conference links, there&apos;s always something different going on."
+            android:id="@+id/textView4"
+            android:textAlignment="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="What to Expect:"
+            android:id="@+id/textView13"
+            android:textColor="#ff063a00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Family shows for up to 80 people where you can discover the amazing stories behind some magnificent treasures from the collections."
+            android:id="@+id/textView15"
+            android:textAlignment="center"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Live performances involving music and dance, linked to our collections"
+            android:id="@+id/textView16"
+            android:textAlignment="center"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Multimedia presentations, films and lectures by experts in their fields."
+            android:id="@+id/textView17"
+            android:textAlignment="center"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Video conferences linking up to people and places across the world."
+            android:id="@+id/textView18"
+            android:textAlignment="center"
+            android:paddingBottom="5dp" />
+
+    </LinearLayout>
+</ScrollView>

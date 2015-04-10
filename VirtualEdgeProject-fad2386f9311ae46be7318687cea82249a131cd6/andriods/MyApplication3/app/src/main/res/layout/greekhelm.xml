@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="177dp"
+                android:layout_height="400dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Dated: Late 6th Century-Early 5th Century BC"
+                    android:id="@+id/textView5"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="left|top"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="ClickOne"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Fun Facts"
+                    android:id="@+id/textView6"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="needs fun facts"
+                    android:id="@+id/textView7"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp" /><![CDATA[
+
+
+
+
+
+                0;
+                    android:id="@+id/editText2" />
+
+
+
+
+
+            ]]>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="202dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/imageButton"
+                    android:layout_gravity="right|top"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/greekhelm" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/button" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Additional resources"
+                android:id="@+id/textView9"
+                android:layout_gravity="left" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="http://en.wikipedia.org/wiki/Corinthian_helmet "
+                android:id="@+id/textView10"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:autoLink="web" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="https://www.youtube.com/watch?v=Ntf-IWmUBvI "
+                android:id="@+id/editText"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:autoLink="web" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

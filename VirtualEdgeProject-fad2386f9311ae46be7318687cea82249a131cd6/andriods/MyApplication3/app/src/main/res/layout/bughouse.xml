@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" ><![CDATA[
+
+        ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/teamprojectfloor2" />
+
+
+
+        ]]>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Free entry"
+            android:id="@+id/textView13"
+            android:textColor="#ff063a00"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:id="@+id/aquaimg"
+            android:src="@drawable/bughouse"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="In World Museum’s Bug House you can get closer than you ever dreamed possible to beetles and flies, spiders and scorpions or centipedes and millipedes. The Bug House displays a selection of specimens from the museum&apos;s vast research collection alongside real live colonies of leaf cutter ants and bees."
+            android:id="@+id/textView4"
+            android:textAlignment="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="There are also interactive displays and larger-than-life models, including a two-metre animatronic fly and Avril the giant spider, who welcomes visitors from her web on the ceiling! "
+            android:id="@+id/textView15"
+            android:textAlignment="center"
+            android:paddingBottom="5dp" />
+
+    </LinearLayout>
+</ScrollView>

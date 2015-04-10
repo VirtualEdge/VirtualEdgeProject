@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" ><![CDATA[
+
+        ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/teamprojectfloor2" />
+
+
+
+
+
+        ]]>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:id="@+id/aquaimg"
+            android:src="@drawable/spaceexhib"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Outside the Planetarium is the Space gallery. Exhibits currently on display include rockets, telescopes, meteorites, Moon rock and interactive computer displays."
+            android:id="@+id/textView4"
+            android:textAlignment="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Space quiz booklet"
+            android:id="@+id/textView13"
+            android:textColor="#ff063a00"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="The museum has produced a &apos;Space quiz&apos; booklet to accompany the Space gallery. Particularly suitable for primary schoolchildren, the quiz involves looking at gallery exhibits to answer questions and drawing pictures of some of the exhibits. The booklets are free, but large school groups visiting the museum should request the number of booklets required well in advance of their visit."
+            android:id="@+id/textView15"
+            android:textAlignment="center"
+            android:paddingBottom="5dp" />
+
+    </LinearLayout>
+</ScrollView>

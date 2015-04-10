@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" ><![CDATA[
+
+        ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/teamprojectfloor2" />
+
+
+
+        ]]>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/aquaimg"
+            android:src="@drawable/egyptian"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="The Ancient Egypt gallery has over 1300 objects on display and exciting audio-visual features and interactives. Some of the objects in the gallery have not been on show for over 60 years."
+            android:id="@+id/textView4"
+            android:textAlignment="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Here are some links below for more information on the artefacts that can be restored and viewed in 3D."
+            android:id="@+id/textView21"
+            android:textColor="#ff063a00"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Chapel of a mastaba tomb	"
+            android:id="@+id/textView22"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Egyptian mummy Padiamun"
+            android:id="@+id/textView23"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Placeholder"
+            android:id="@+id/textView24"
+            android:paddingBottom="10dp" />
+
+    </LinearLayout>
+</ScrollView>

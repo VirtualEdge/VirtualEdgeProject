@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" ><![CDATA[
+
+        ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/teamprojectfloor2" />
+
+
+
+        ]]>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/aquaimg"
+            android:src="@drawable/aqua"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Aquarium Highlights"
+            android:id="@+id/textView13"
+            android:textColor="#ff063a00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tropical - Find a rainbow array of beautiful fish, including venomous Scorpionfish, tiny Cleaner Wrasse and Falseclown fish (that&apos;s the same species as Nemo !)"
+            android:id="@+id/textView4"
+            android:textAlignment="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mangrove - Archer fish, Monos and Scat live in the mangrove swamp tank with a tidal effect that minics the rise and fall of water along a tropical shore."
+            android:id="@+id/textView15"
+            android:textAlignment="center"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Native - See Plaice, Shore Clingfish and Thornback Ray in the coldwater tanks that mimic the rocky coast of Anglesey in "
+            android:id="@+id/textView16"
+            android:textAlignment="center"
+            android:paddingBottom="5dp" />
+
+    </LinearLayout>
+</ScrollView>
