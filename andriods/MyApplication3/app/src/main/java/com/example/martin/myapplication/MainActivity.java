@@ -99,6 +99,7 @@ public class MainActivity extends ActionBarActivity
         Context context = getApplicationContext();
         CharSequence text = scanResult.getContents();
         int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(context, text, duration);
 
         //Toast toast = Toast.makeText(context, text, duration);
         //toast.show();
@@ -106,21 +107,20 @@ public class MainActivity extends ActionBarActivity
         //Example 1a is the first floor screen if scanned change to that screen.
         switch(scanResult.getContents()){
             case "1a":
-                Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
                 m.fragSelect(1);
                 objFragment = m;
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, objFragment)
-                        .commitAllowingStateLoss();
-
                 break;
             default:
-                Toast toast_error = Toast.makeText(context, "Invalid item scanned!", duration);
+                Toast toast_error = Toast.makeText(context, "Invalid QR Code!", duration);
                 toast_error.show();
                 break;
         }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, objFragment)
+                .commitAllowingStateLoss();
     }
 
     public void viewRestoration(View view){

@@ -10,7 +10,6 @@ import android.view.ViewGroup;
  */
 public class MenuFragment extends android.support.v4.app.Fragment {
     View rootview;
-    int resource;
 
     public MenuFragment() {
 
