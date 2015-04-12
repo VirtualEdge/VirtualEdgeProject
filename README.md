@@ -10,6 +10,7 @@ VirtualEdgeProject
 * Update Project Plan<br>
 * Update weekly meeting notes<br>
 * Add issues faced/problems to meetings<br>
+* The splash screen contains a button that allows the user to enter the app
 * IF ANYONE HAS ANY PROBLEMS FACED SO FAR CAN YOU SEND ME A NOTE OF THEM AND HOW THE PROBLEM WAS SOLVED - THE VISUAL STUDIO TO ANDROID THING MAYBE KYLE?<br>
 
 
